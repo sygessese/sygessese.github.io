@@ -68,12 +68,12 @@ const Header = props => {
     }
   `
 
-
   return (
     <div>
       <Menubar>
         <ContentContainer>
           <Pic />
+
           <Bio>
             Hello! My name is Selam and I am a software engineer based in
             Seattle. I am passionate about solving complex challenges, and
