@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Glossyselfie from "../components/glossyselfie"
+import Glossyselfie from "../components/image"
 import SEO from "../components/seo"
 import styled from 'styled-components'
 
