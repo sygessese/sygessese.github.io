@@ -10,6 +10,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 
+
 const Project = ({ title, gif, info, technologies, github, live, index, type }) => {
   const Container = styled.div`
   display: flex;
@@ -86,7 +87,8 @@ const Project = ({ title, gif, info, technologies, github, live, index, type }) 
   });
 
   const classes = useStyles();
-  const techs = technologies.join(` • `)
+  const techs = technologies.map((image, id)=>{
+    return <img id={id} src={image} key={id} style={{ maxHeight: '4em'}} />})
   const [show, setShow] = useState(false);
   const toggle = () => {setShow(!show)}
 
