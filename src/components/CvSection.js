@@ -28,8 +28,8 @@ const CvSection = ({ section, contents }) => {
     <Section>
       <SectionTitle>{section}</SectionTitle>
       <SectionContent>
-        {contents.map(content => {
-          return <CvSectionItem item={content} />
+        {contents.map((content, id) => {
+          return <CvSectionItem item={content} key={id} />
         })}
       </SectionContent>
     </Section>
