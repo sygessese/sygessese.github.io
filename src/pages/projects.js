@@ -3,11 +3,23 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from 'styled-components'
 import Project from "../components/project";
-import Hungry from "../images/Coding.jpg";
 import FlickStash from "../images/IMG_1529.gif"
-import Gessese from "../images/Coding.jpg"
 import Distilled from "../images/Distilled.gif"
 import Typewriter from "../components/typewriter"
+import Babel from "../images/babel.png"
+import Express from "../images/express.png"
+import ReactImg from "../images/react.png"
+import Styledc from "../images/styled.png"
+import Mongo from "../images/mongo.png"
+import Jest from "../images/jest.png"
+import Webpack from "../images/webpack.png"
+import JS from "../images/js.png"
+import Enzyme from "../images/enzyme.png"
+import Heroku from "../images/heroku.png"
+import PostgreSQL from "../images/postgresql.png"
+
+
+
 
 const ProjectsPage = () => {
   const Container = styled.div`
@@ -30,20 +42,29 @@ const ProjectsPage = () => {
   `
 
   const ProjectList = [
-    // {
-    //   "title": "Twittok",
-    //   "gif": { Distilled },
-    //   "info": "Social networking site",
-    //   "technologies": ["React", "Express", "Mongoose", "MongoDBLab","Heroku", "Flex", "Styled Components", "Babel", "Jest", "Enzyme", "Webpack", "ESLint"],
-    //   "github": "https://github.com/Distilled-org/Selam_service",
-    //   "live": true,
-    //   "type": "Web Application"
-    // },
+    {
+      "title": "Twittok",
+      "gif": null,
+      "info": "Social networking site",
+      "technologies": [React, Express, "Mongoose", "MongoDBLab", Heroku, "Flex", Styledc, Babel, Webpack, "ESLint"],
+      "github": "https://github.com/Distilled-org/Selam_service",
+      "live": true,
+      "type": "Web Application"
+    },
+    {
+      "title": "Jastdance",
+      "gif": null,
+      "info": "Comments module of a music streaming service",
+      "technologies": [ReactImg, Express, "Cassandra", Styledc, Webpack, "Docker, Nginx, Amazon"],
+      "github": "https://github.com/Distilled-org/Selam_service",
+      "live": false,
+      "type": "Web Application"
+    },
     {
       "title": "Distilled",
       "gif": { Distilled },
       "info": "Clothing retailer's product detail page",
-      "technologies": ["React", "Express", "MongoDB", "Styled Components", "Babel", "Jest", "Enzyme", "Webpack", "ESLint"],
+      "technologies": [Babel, JS, ReactImg, Express, Mongo, Styledc, Jest, Enzyme, Webpack],
       "github": "https://github.com/Distilled-org/Selam_service",
       "live": false,
       "type": "Web Application"
@@ -52,7 +73,7 @@ const ProjectsPage = () => {
       "title": "Hungry",
       "gif": null,
       "info": "No fuss selection of highly rated dining options near you",
-      "technologies": ["ReactNative", "GraphQL", "Geolocation", "Javascript", "Express", "PostgreSQL"],
+      "technologies": ["ReactNative", "GraphQL", "Geolocation", Express, PostgreSQL],
       "github": "https://github.com/sygessese/hungry",
       "live": false,
       "type": "IOS Mobile Application"
@@ -61,7 +82,7 @@ const ProjectsPage = () => {
       "title": "Gessese",
       "gif": null,
       "info": "Personal Portfolio",
-      "technologies": ["GatsbyJS", "MaterialUI", "Styled Components", "Route 53", "Github Pages"],
+      "technologies": ["GatsbyJS", "MaterialUI", Styledc, "Route 53", "Github Pages"],
       "github": "https://github.com/sygessese/sygessese.github.io/",
       "live": "https://gessese.com",
       "type": "Static Website"
@@ -70,7 +91,7 @@ const ProjectsPage = () => {
       "title": "FlickStash",
       "gif": { FlickStash },
       "info": "Save, and organize your favorite films - movie database API",
-      "technologies": ["React", "Javascript", "Express", "PostgreSQL", "Heroku", "Styled Components"],
+      "technologies": [ReactImg, JS, Express, PostgreSQL, Heroku, Styledc],
       "github": "https://github.com/sygessese/flickstash",
       "live": "https://flickstash.herokuapp.com/",
       "type": "Web Application"
@@ -78,7 +99,7 @@ const ProjectsPage = () => {
   ];
 
   const ProjectListRendered = ProjectList.map((p, i) => {
-    return <Project title={p.title} gif={p.gif} info={p.info} technologies={p.technologies} github={p.github} live={p.live} index={i} type={p.type} />
+    return <Project title={p.title} gif={p.gif} info={p.info} technologies={p.technologies} github={p.github} live={p.live} index={i} key={i} type={p.type} />
   })
 
   return (
