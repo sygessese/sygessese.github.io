@@ -61,7 +61,7 @@ const ProjectsPage = () => {
       "gif": null,
       "info": "Social networking site",
       "technologies": [ReactImg, Express, Mongoose, Mlab, Heroku, Styledc, MaterialUI, Babel, Webpack],
-      "github": "https://github.com/Distilled-org/Selam_service",
+      "github": "https://github.com/sygessese/twitook",
       "live": true,
       "type": "Web Application"
     },
@@ -70,7 +70,7 @@ const ProjectsPage = () => {
       "gif": null,
       "info": "Comments module of a music streaming service",
       "technologies": [ReactImg, Express, Cassandra, Styledc, Webpack, Docker, Nginx, Aws],
-      "github": "https://github.com/Distilled-org/Selam_service",
+      "github": "https://github.com/sygessese/info-comments-module",
       "live": false,
       "type": "Web Application"
     },
