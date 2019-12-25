@@ -1,622 +1,391 @@
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-progress {
-  vertical-align: baseline;
-}
-[hidden],
-template {
-  display: none;
-}
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-a:active,
-a:hover {
-  outline-width: 0;
-}
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
-}
-b,
-strong {
-  font-weight: inherit;
-  font-weight: bolder;
-}
-dfn {
-  font-style: italic;
-}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-small {
-  font-size: 80%;
-}
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sub {
-  bottom: -0.25em;
-}
-sup {
-  top: -0.5em;
-}
-img {
-  border-style: none;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-figure {
-  margin: 1em 40px;
-}
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-button,
-input,
-optgroup,
-select,
-textarea {
-  font: inherit;
-  margin: 0;
-}
-optgroup {
-  font-weight: 700;
-}
-button,
-input {
-  overflow: visible;
-}
-button,
-select {
-  text-transform: none;
-}
-[type="reset"],
-[type="submit"],
-button,
-html [type="button"] {
-  -webkit-appearance: button;
-}
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
-button::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring,
-button:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-fieldset {
-  border: 1px solid silver;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
-textarea {
-  overflow: auto;
-}
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-[type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
-}
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-}
-html {
-  font: 112.5%/1.45em georgia, serif;
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
-* {
-  box-sizing: inherit;
-}
-*:before {
-  box-sizing: inherit;
-}
-*:after {
-  box-sizing: inherit;
-}
-body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
-}
-img {
-  max-width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-h1 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
-  line-height: 1.1;
-}
-h2 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
-  line-height: 1.1;
-}
-h3 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
-  line-height: 1.1;
-}
-h4 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 1rem;
-  line-height: 1.1;
-}
-h5 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 0.85028rem;
-  line-height: 1.1;
-}
-h6 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  font-size: 0.78405rem;
-  line-height: 1.1;
-}
-hgroup {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-ul {
-  margin-left: 1.45rem;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  list-style-position: outside;
-  list-style-image: none;
-}
-ol {
-  margin-left: 1.45rem;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  list-style-position: outside;
-  list-style-image: none;
-}
-dl {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-dd {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-p {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-figure {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-pre {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 1.45rem;
-  font-size: 0.85rem;
-  line-height: 1.42;
-  background: hsla(0, 0%, 0%, 0.04);
-  border-radius: 3px;
-  overflow: auto;
-  word-wrap: normal;
-  padding: 1.45rem;
-}
-table {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  font-size: 1rem;
-  line-height: 1.45rem;
-  border-collapse: collapse;
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+#loading2 {
   width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  opacity: 100;
+  background-color: #fceffc;
+  z-index: 99;
+  text-align: center;
 }
-fieldset {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+
+#loading2-container {
+ width: 40%;
+ height: 20vh;
+ margin: auto;
+ margin-top: 40vh;
+ margin-bottom: 40vh
 }
-blockquote {
-  margin-left: 1.45rem;
-  margin-right: 1.45rem;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  opacity: 100;
+  background-color: #fceffc;
+  z-index: 98;
+  text-align: center;
 }
-form {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+
+#loading-image {
+ position: absolute;
+ top: 42%;
+ left: 45%;
+
+ z-index: 100;
 }
-noscript {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+
+html {
+ background-image: url("../images/plant.jpg");
+ background-repeat: no-repeat; /* Do not repeat the image */
+ background-attachment: fixed;
+ background-size: cover;
 }
-iframe {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+
+body {
+ margin-top: 7.5vw;
+ margin-bottom: 9.5vw;
+ color: #5a5a5a;
+ margin-left: 11vw;
+ margin-right: 11vw;
 }
-hr {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: calc(1.45rem - 1px);
-  background: hsla(0, 0%, 0%, 0.2);
-  border: none;
-  height: 1px;
+
+#top {
+ font-size: 5.5vw;
 }
-address {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+
+#top2 {
+ font-size: 3.5vw;
 }
-b {
-  font-weight: bold;
+
+.big-background { 
+ background-image: url("../images/abstract.png");
+ background-attachment: fixed;
+ background-position: left;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-color: transparent;
+ margin-bottom: 7vw;
 }
-strong {
-  font-weight: bold;
+
+/*  */
+#banner-block {
+ background-image: url("../images/glossyselfie.jpg");
+ background-color: transparent;
+ /*-- background-attachment: fixed;  this is the coooolest, makes it the window wall paper--*/
+ background-position: 12vw 0px; /* Center the image */
+ background-repeat: no-repeat; /* Do not repeat the image */
+ background-size: contain; /* Resize the background image to cover the entire container */
+ padding-left: 26vw;
+ padding-top: 20vw;
+ padding-right: 1vw;
+ height: 30vw;
 }
-dt {
-  font-weight: bold;
+
+/* the text box over the image header*/
+#jumbotron-text {
+ background: rgb(0, 0, 0); /* Fallback color */
+ background: rgba(0, 0, 0, 0.45); /* Black background with 0.5 opacity */
+ color: #f1f1f1; /* Grey text */
+ padding-left: 10px;
 }
-th {
-  font-weight: bold;
+
+/* h1 Selam in header banner */
+#h1-banner {
+ font-size: 4vw;
+ margin-bottom: 0;
 }
-li {
-  margin-bottom: calc(1.45rem / 2);
+
+/* the Paragraph elements in header banner */
+p.p-banner {
+ font-size: 2vw;
+ margin-bottom: 0vw;
 }
-ol li {
-  padding-left: 0;
+
+/* if the screen gets too small aka cellphones */
+@media (max-width: 750px) {
+ #h1-banner {
+   font-size: 4vw;
+ }
+
+ p.p-banner {
+   font-size: .8rem;
+   margin-bottom: 1vw;
+ }
+
+ #banner-block {
+ padding-left: 30vw;
+ padding-right: 1vw;
+ padding-bottom: 1vw;
+   padding-top: 25vh;
+ height: 40vh;
+ }
+
+ #top {
+ font-size: 3.5rem;
+ }
+
+ #top {
+ font-size: 3.5vw;
+ }
 }
-ul li {
-  padding-left: 0;
+/* when screen is wide ie computer, makes body slim*/
+@media (min-width: 1200px) {
+ body {
+ margin-top: 5.5vw;
+ margin-bottom: 11.5vw;
+ margin-left: 15vw;
+ margin-right: 15vw;
+ }
 }
-li > ol {
-  margin-left: 1.45rem;
-  margin-bottom: calc(1.45rem / 2);
-  margin-top: calc(1.45rem / 2);
+
+/* hides text in banner if screen is too small */
+@media (max-width: 400px) {
+ #jumbotron-text {
+   display: none;
+ }
+
+ #top {
+ font-size: 12vw;
+ }
+
+ #top {
+ font-size: 8.5vw;
+ }
+
 }
-li > ul {
-  margin-left: 1.45rem;
-  margin-bottom: calc(1.45rem / 2);
-  margin-top: calc(1.45rem / 2);
+
+.long-word {
+ word-break:break-word;
 }
-blockquote *:last-child {
-  margin-bottom: 0;
+
+.test-image {
+ border-radius: 50%;
+ margin-bottom: 1rem;
+ margin-left: 1vw;
 }
-li *:last-child {
-  margin-bottom: 0;
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+ margin-bottom: 4rem;
 }
-p *:last-child {
-  margin-bottom: 0;
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+ bottom: 3rem;
+ z-index: 10;
 }
-li > p {
-  margin-bottom: calc(1.45rem / 2);
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+ height: 32rem;
 }
-code {
-  font-size: 0.85rem;
-  line-height: 1.45rem;
+.carousel-item > img {
+ position: absolute;
+ top: 0;
+ left: 0;
+ min-width: 100%;
+ height: 32rem;
 }
-kbd {
-  font-size: 0.85rem;
-  line-height: 1.45rem;
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+ margin-bottom: 1.5rem;
+ text-align: center;
 }
-samp {
-  font-size: 0.85rem;
-  line-height: 1.45rem;
+.marketing h2 {
+ font-weight: 400;
 }
-abbr {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
-  cursor: help;
+.marketing .col-lg-4 p {
+ margin-right: .75rem;
+ margin-left: .75rem;
 }
-acronym {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
-  cursor: help;
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+ margin: 3rem 0; /* Space out the Bootstrap <hr> more */
 }
-abbr[title] {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
-  cursor: help;
-  text-decoration: none;
+
+/* Thin out the marketing headings */
+.featurette-heading {
+ font-weight: 300;
+ line-height: 1;
+ letter-spacing: -.05rem;
 }
-thead {
-  text-align: left;
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+ /* Bump up size of carousel content */
+ .carousel-caption p {
+   margin-bottom: 1.25rem;
+   font-size: 1.25rem;
+   line-height: 1.4;
+ }
+
+ .featurette-heading {
+   font-size: 50px;
+ }
 }
-td,
-th {
-  text-align: left;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-  font-feature-settings: "tnum";
-  -moz-font-feature-settings: "tnum";
-  -ms-font-feature-settings: "tnum";
-  -webkit-font-feature-settings: "tnum";
-  padding-left: 0.96667rem;
-  padding-right: 0.96667rem;
-  padding-top: 0.725rem;
-  padding-bottom: calc(0.725rem - 1px);
+
+@media (min-width: 62em) {
+ .featurette-heading {
+   margin-top: 7rem;
+ }
 }
-th:first-child,
-td:first-child {
-  padding-left: 0;
+
+
+/* stylelint-disable selector-list-comma-newline-after */
+
+.blog-header {
+ line-height: 1;
+ border-bottom: 1px solid #e5e5e5;
+ padding-top: .1rem!important;
+ padding-bottom: .3rem!important;
 }
-th:last-child,
-td:last-child {
-  padding-right: 0;
+
+.blog-header-logo {
+ font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+ font-size: 2.25rem;
 }
-tt,
-code {
-  background-color: hsla(0, 0%, 0%, 0.04);
-  border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+
+.blog-header-logo:hover {
+ text-decoration: none;
 }
-pre code {
-  background: none;
-  line-height: 1.42;
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
-code:before,
-code:after,
-tt:before,
-tt:after {
-  letter-spacing: -0.2em;
-  content: " ";
+
+.display-4 {
+ font-size: 2.5rem;
 }
-pre code:before,
-pre code:after,
-pre tt:before,
-pre tt:after {
-  content: "";
+@media (min-width: 768px) {
+ .display-4 {
+   font-size: 3rem;
+ }
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
+
+.nav-scroller {
+ position: relative;
+ z-index: 2;
+ height: 2.75rem;
+ overflow-y: hidden;
 }
+
+.nav-scroller .nav {
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-wrap: nowrap;
+ flex-wrap: nowrap;
+ padding-bottom: 1rem;
+ margin-top: -1px;
+ overflow-x: auto;
+ text-align: center;
+ white-space: nowrap;
+ -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+ padding-top: .75rem;
+ padding-bottom: .75rem;
+ font-size: .875rem;
+}
+
+.card-img-right {
+ height: 100%;
+ border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+ -ms-flex: 0 0 auto;
+ flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+ .h-md-250 { height: 250px; }
+}
+
+/*
+* Blog name and description
+*/
+.blog-title {
+ margin-bottom: 0;
+ font-size: 2rem;
+ font-weight: 400;
+}
+.blog-description {
+ font-size: 1.1rem;
+ color: #999;
+}
+
+@media (min-width: 40em) {
+ .blog-title {
+   font-size: 3.5rem;
+ }
+}
+
+/* Pagination */
+.blog-pagination {
+ margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+ border-radius: 2rem;
+}
+
+/*
+* Blog posts
+*/
+.blog-post {
+ margin-bottom: 4rem;
+}
+.blog-post-title {
+ margin-bottom: .25rem;
+ font-size: 2.5rem;
+}
+.blog-post-meta {
+ margin-bottom: 1.25rem;
+ color: #999;
+}
+
+/*
+* Footer
+*/
+.blog-footer {
+ padding: 2.5rem 0;
+ color: #999;
+ text-align: center;
+ background-color: #f9f9f9;
+ border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+ margin-bottom: 0;
+}
+
+footer {
+ padding: 1vw;
+ margin: 1vw;
+}
+
