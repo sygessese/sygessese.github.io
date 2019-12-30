@@ -10,6 +10,7 @@ const ProjectsPage = () => {
   const Container = styled.div`
   display: flex;
   flex-direction: column;
+  
   `
 
   const TextContainer = styled.div`
@@ -26,7 +27,7 @@ const ProjectsPage = () => {
       <h1>Projects</h1>
       <Container>
         <TextContainer>
-          Project 1
+          <a href="https://flickstash.herokuapp.com/">FlickStash</a>: Save, and organize your favorite films - movie database API
         </TextContainer>
       </Container>
     </Layout>

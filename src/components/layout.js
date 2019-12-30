@@ -26,11 +26,10 @@ const Layout = ({ children }) => {
   `)
 
   const Container = styled.div`
-  margin-top: 7.5vw;
-  margin-bottom: 9.5vw;
+  padding-bottom: 2%;
   color: #5a5a5a;
-  margin-left: 11vw;
-  margin-right: 11vw;
+  padding-left: 5%;
+  padding-right: 5%;
   `
 
   return (
@@ -38,10 +37,6 @@ const Layout = ({ children }) => {
       <Header siteTitle="//" />
 
       <main>{children}</main>
-
-      <footer className="footer-container">
-        <p> © {new Date().getFullYear()} Gessese &middot;</p>
-      </footer>
 
     </Container>
   )
