@@ -11,10 +11,11 @@ const Header = ({ siteTitle }) => {
   height: 10%;
   display: flex;
   flex-direction: row-reverse;
-  font-family: Georgia;
-  font-size: 2em;
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  text-decoration: none;
   @media (max-width: 820px) {
-    font-size: 1em;
+    font-size: .8em;
   }
   `
   const Linkholder = styled.div`
