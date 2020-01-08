@@ -25,12 +25,13 @@ const Header = ({ siteTitle }) => {
   return (
     <Menubar>
       <Linkholder>
+        <Link to="/about"> /about  </Link>
+      </Linkholder>
+      
+      <Linkholder>
         <Link to="/projects"> /projects </Link>
       </Linkholder>
 
-      <Linkholder>
-        <Link to="/about"> /about  </Link>
-      </Linkholder>
 
       <Linkholder>
         <Link to="/"> / </Link>
