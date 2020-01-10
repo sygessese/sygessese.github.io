@@ -1,7 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 import styled from 'styled-components'
-import gif from "../images/Coding.jpg"
 
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -11,18 +10,16 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 
-const Project = ({ title, gif2, info, technologies, link, index }) => {
-
+const Project = ({ title, gif, info, technologies, link, index, type }) => {
   const Container = styled.div`
   display: flex;
   flex-direction: row;
-  margin-bottom: 5em;
+  margin-bottom: 8em;
   width: 100%;
-  @media (max-width: 700px) {
-    // height: 100%;
+  justify-content: center;
+    @media (max-width: 600px) {
     width: 90%;
     padding-left: 5%;
-    // margin-bottom: 0;
     flex-direction: column-reverse;
   }
   `
@@ -31,7 +28,8 @@ const Project = ({ title, gif2, info, technologies, link, index }) => {
   width: 20em;
   margin-right: 2em;
   margin-left: 1em;
-  @media (max-width: 700px) {
+  text-align: right;
+  @media (max-width: 600px) {
     width: 100%;
     margin-top: 1em;
     margin-right: 0;
@@ -40,14 +38,14 @@ const Project = ({ title, gif2, info, technologies, link, index }) => {
   `
 
   const InfoContainer = styled.div`
-  z-index: 1;
-  &:hover {
-    z-index: 20;
+  @media (max-width: 600px) {
+    width: 100%;
   }
   `
   const useStyles = makeStyles({
     card: {
       minWidth: 275,
+      maxWidth: 500,
     },
     bullet: {
       display: 'inline-block',
@@ -55,38 +53,40 @@ const Project = ({ title, gif2, info, technologies, link, index }) => {
       transform: 'scale(0.8)',
     },
     title: {
-      fontSize: 14,
+      fontSize: 16,
     },
     pos: {
       marginBottom: 12,
     },
   });
+
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
+  const techs = technologies.join(` • `)
 
   return (
     <Container index={index}>
       <GifContainer>
-        <img src={gif} style={{ height: '100%', width: '100%', objectFit: 'contain' }}></img>
+        <img src={gif[title]} style={{ height: '100%', width: '100%', objectFit: 'contain' }}></img>
       </GifContainer>
       <InfoContainer>
         <Card className={classes.card}>
           <CardContent>
             <Typography className={classes.title} color="textSecondary" gutterBottom>
-              app type: mobile
+              Type: {type}
             </Typography>
             <Typography variant="h5" component="h2">
               {title}
             </Typography>
             <Typography className={classes.pos} color="textSecondary">
-              list technologies {bull} more {bull} tech
-        </Typography>
+              {techs}
+            </Typography>
             <Typography variant="body2" component="p">
-              {info} <br></br> {info} <br></br> {info}
+              {info} <br></br> {info} {info} <br></br> {info} <br></br> {info}
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Go to Github</Button>
+            <Button size="small" href={link}>Go to Github</Button>
           </CardActions>
         </Card>
       </InfoContainer>
