@@ -68,11 +68,12 @@ const AboutPage = () => {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
+  align-items: center
   `
 
-  const Email = styled.div`
-  height: 40px;
-  width: 40px;
+  const Icon = styled.div`
+  height: 30px;
+  width: 30px;
   margin-right: 10px;
 
   animation: ${Swing} 10s linear infinite;
@@ -96,11 +97,15 @@ const AboutPage = () => {
 
           <Icons>
             <Tooltip title="E-mail" placement="bottom-start">
-              <Email>
-                <a href="mailto:sygessese@gmail.com?subject=From%20Gessese.com%20&body=Hi,%20"> <img src={email} alt="email" height="40px" width="40px" ></img></a>
-              </Email>
+              <Icon>
+                <a href="mailto:sygessese@gmail.com?subject=From%20Gessese.com%20&body=Hi,%20"> <img src={email} alt="email" height="40px" width="40px" ></img>Reach out and say Hi!</a>
+              </Icon>
             </Tooltip>
-            Reach out and say Hi!
+            <Tooltip title="E-mail" placement="bottom-start">
+              <Icon>
+                <a href="mailto:sygessese@gmail.com?subject=From%20Gessese.com%20&body=Hi,%20"> <img src={email} alt="email" height="40px" width="40px" ></img>Reach out and say Hi!</a>
+              </Icon>
+            </Tooltip>
           </Icons>
         </TextContainer>
       </Container>
