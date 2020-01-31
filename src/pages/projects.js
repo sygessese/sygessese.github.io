@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Project from "../components/project";
 import Hungry from "../images/Coding.jpg";
 import FlickStash from "../images/IMG_1529.gif"
-import Gessese from "../images/glossypeach.gif"
+import Gessese from "../images/Coding.jpg"
 
 const ProjectsPage = () => {
   const Container = styled.div`
@@ -23,17 +23,19 @@ const ProjectsPage = () => {
     {
       "title": "FlickStash",
       "gif": { FlickStash },
-      "info": "Save, and organize your favorite films - movie database API - movie database API",
+      "info": "Save, and organize your favorite films - movie database API",
       "technologies": ["React", "Javascript", "Express", "PostgreSQL", "Heroku", "Styled Components"],
-      "link": "https://flickstash.herokuapp.com/",
+      "github": "https://github.com/sygessese/flickstash",
+      "live": "https://flickstash.herokuapp.com/",
       "type": "Web Application"
     },
     {
       "title": "Hungry",
       "gif": { Hungry },
-      "info": "Save, and organize your favorite films - movie database API",
-      "technologies": ["ReactNative", "Javascript", "Express", "PostgreSQL"],
-      "link": "https://github.com/sygessese/hungry",
+      "info": "No fuss selection of highly rated dining options near you",
+      "technologies": ["ReactNative", "GraphQL", "Geolocation", "Javascript", "Express", "PostgreSQL"],
+      "github": "https://github.com/sygessese/hungry",
+      "live": false,
       "type": "IOS Mobile Application"
     },
     {
@@ -41,13 +43,14 @@ const ProjectsPage = () => {
       "gif": { Gessese },
       "info": "Personal Portfolio",
       "technologies": ["GatsbyJS", "MaterialUI", "Styled Components", "Route 53", "Github Pages"],
-      "link": "https://gessese.com",
+      "github": "https://github.com/sygessese/sygessese.github.io/",
+      "live": "https://gessese.com",
       "type": "Static Website"
     }
   ];
 
   const ProjectListRendered = ProjectList.map((p, i) => {
-    return <Project title={p.title} gif={p.gif} info={p.info} technologies={p.technologies} link={p.link} index={i} type={p.type} />
+    return <Project title={p.title} gif={p.gif} info={p.info} technologies={p.technologies} github={p.github} live={p.live} index={i} type={p.type} />
   })
 
   return (
