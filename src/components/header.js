@@ -6,7 +6,8 @@ import GlossySelfie from "../images/glossyselfie.jpg"
 import CardActions from "@material-ui/core/CardActions"
 import Button from "@material-ui/core/Button"
 import ButtonGroup from "@material-ui/core/ButtonGroup"
-import Resume from "../images/resume.pdf"
+
+// side bar menu/ navigation
 
 const Header = props => {
   const Menubar = styled.div`
@@ -77,7 +78,7 @@ const Header = props => {
           <Pic />
 
           <Bio>
-            Hello! My name is Selam and I am a software engineer living in
+            Hello! My name is Selam and I am a software engineer based in
             Seattle. I am passionate about solving complex challenges, and
             contributing to an elevated human experience.
             <br></br>
@@ -117,6 +118,13 @@ const Header = props => {
               >
                 sygessese@gmail.com
               </Button>
+              <Button size="small" disabled={false} fullWidth>
+                <Link to="/projects" style={{ textDecoration: "none" }}>
+                  {" "}
+                  Projects{" "}
+                </Link>
+              </Button>
+
               <Button size="small" disabled={false} fullWidth>
                 <Link to="/quicksearch" style={{ textDecoration: "none" }}>
                   {" "}

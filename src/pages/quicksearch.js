@@ -30,9 +30,9 @@ const Header = styled.div`
 
 const quicksearch = () => (
   <Layout>
-    <SEO title="Quick Search" />
+    <SEO title="Quick Union" />
     <Container>
-      <Header>Quick Search</Header>
+      <Header>Quick Union</Header>
       <QS />
     </Container>
   </Layout>
