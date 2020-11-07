@@ -6,20 +6,32 @@ import Project from "../components/project";
 import Hungry from "../images/Coding.jpg";
 import FlickStash from "../images/IMG_1529.gif"
 import Gessese from "../images/Coding.jpg"
+import Distilled from "../images/Distilled.gif"
 
 const ProjectsPage = () => {
   const Container = styled.div`
   margin-top: 5em;
+  padding-left: 23em;
+  padding-right: 3em;
   display: flex;
   flex-direction: column;
+  @media (max-width: 820px) {  
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 14em;
+    margin-top: 0em;
   `
-  const TextContainer = styled.div`
-  height: 3em;
-  display: flex;
-  flex-direction: row;
-  font-size: 1em;
-  `
+
   const ProjectList = [
+    {
+      "title": "Distilled",
+      "gif": { Distilled },
+      "info": "Clothing retailer's product detail page",
+      "technologies": ["React", "Express", "MongoDB", "Styled Components", "Babel", "Jest", "Enzyme", "Webpack", "ESLint"],
+      "github": "https://github.com/Distilled-org/Selam_service",
+      "live": false,
+      "type": "Web Application"
+    },
     {
       "title": "FlickStash",
       "gif": { FlickStash },
