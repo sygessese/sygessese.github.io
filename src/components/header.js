@@ -125,12 +125,13 @@ const Header = props => {
                 </Link>
               </Button>
 
-              <Button size="small" disabled={false} fullWidth>
+              {/* links to quick sort demo */}
+              {/* <Button size="small" disabled={false} fullWidth>
                 <Link to="/quicksearch" style={{ textDecoration: "none" }}>
                   {" "}
                   ouu{" "}
                 </Link>
-              </Button>
+              </Button> */}
             </ButtonGroup>
           </CardActions>
         </ContentContainer>

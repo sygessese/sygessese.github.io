@@ -17,6 +17,10 @@ const Project = ({ title, gif, info, technologies, github, live, index, type }) 
   margin-bottom: 3em;
   width: 100%;
   justify-content: center;
+  '&:hover': {
+    boxShadow: '0 6px 20px 0 rgba(0,0,0,0.38)',
+    bottom: -6,
+  },
   @media (max-width: 600px) {
     width: 100%;
     flex-direction: column-reverse;
@@ -24,15 +28,15 @@ const Project = ({ title, gif, info, technologies, github, live, index, type }) 
   `
 
   const GifContainer = styled.div`
-  width: auto;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
   margin-right: 1.5em;
   margin-left: 1em;
-  text-align: right;
+  text-align: center;
   display: ${props => props.show ? 'display': 'none'};
   @media (max-width: 600px) {
     text-align: center;
-    width: 100%;
+    max-width: 100%;
     margin-top: 1em;
     margin-right: 0;
     margin-left: 0;
@@ -43,20 +47,31 @@ const Project = ({ title, gif, info, technologies, github, live, index, type }) 
     card: {
       minWidth: 275,
       width: '100%',
+      maxHeight: 800,
       //maxWidth: 500,
     },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
     title: {
-      fontSize: 16,
       marginBottom: 12,
+      marginRight: '.5em',
+      fontWeight: 100,
+      fontSize: '2em',
+      '@media (max-width: 600px)': {
+        display: 'block',
+        marginBottom: 0
+      },
     },
-    pos: {
-      marginBottom: 12,
+    type: {
+      fontSize: '1.5em',
+      fontWeight: 100,
+      '@media (max-width: 600px)': {
+        display: 'block',
+        marginBottom: '.5em',
+      },
+    },
+    tech: {
+      //marginBottom: 12,
       fontSize: 15,
+      textTransform: 'uppercase'
     },
     cardcontent: {
       backgroundColor: 'whitesmoke',
@@ -64,7 +79,11 @@ const Project = ({ title, gif, info, technologies, github, live, index, type }) 
     },
     cardaction: {
       justifyContent: 'space-around',
-      backgroundColor: 'lavenderblush'
+      backgroundColor: 'lavenderblush',
+      '&:hover': {
+        boxShadow: '0 6px 20px 0 rgba(0,0,0,0.38)',
+        bottom: -6,
+      },
     }
   });
 
@@ -74,33 +93,33 @@ const Project = ({ title, gif, info, technologies, github, live, index, type }) 
   const toggle = () => {setShow(!show)}
 
 
-  let expandbutton = show ? <Button size="small" onClick={toggle}> Collapse </Button> : <Button size="small" onClick={toggle}> Expand </Button>
+  let expandbutton = show ? <Button size="small" onClick={toggle}> Collapse GIF ↑ </Button> : <Button size="small" onClick={toggle}> Expand GIF ↓ </Button>
   const githubbutton = github ? <Button size="small" href={github}>Go to Github</Button> : "";
   const livebutton = live ? <Button size="small" href={live}>View Live</Button> : "";
+  const giffy = gif ? <GifContainer show={show}>
+    <img src={gif[title]} style={{ maxHeight: '500px', maxWidth: '100%', objectFit: 'contain' }}></img>
+    </GifContainer> : ''
 
   return (
     <Container index={index}>
         <Card className={classes.card} raised={true}>
           <CardContent className={classes.cardcontent}>
-            <Typography className={classes.title} color="textSecondary" gutterBottom>
-              Type: {type} {expandbutton}
-            </Typography>
-            <Typography variant="h4" component="h2" color="textPrimary">
+            <Typography variant="h4" component="h2" color="textPrimary" display="inline" className={classes.title}>
               {title}
-            </Typography>
-            <Typography className={classes.pos} color="textSecondary">
-              {techs}
+            </Typography> 
+            <Typography variant="h4" component="h2" display="inline"  color="textPrimary" className={classes.type}>
+              // {type}
             </Typography>
             <Typography variant="body1" component="p">
-              {info}<br></br><br></br><br></br>
-              
-              <GifContainer show={show}>
-                <img src={gif[title]} style={{ height: '100%', width: 'auto', objectFit: 'contain' }}></img>
-              </GifContainer>
+              {info}<br></br><br></br>
+              {giffy}
+            </Typography>
+            <Typography className={classes.tech} color="textSecondary">
+              {techs}
             </Typography>
           </CardContent>
           <CardActions className={classes.cardaction}>
-            {githubbutton} {livebutton}
+            {githubbutton} {livebutton} {gif ? expandbutton : ''}
           </CardActions>
         </Card>
     </Container>

@@ -11,18 +11,31 @@ import Distilled from "../images/Distilled.gif"
 const ProjectsPage = () => {
   const Container = styled.div`
   margin-top: 5em;
-  padding-left: 23em;
-  padding-right: 3em;
+  padding-left: 25em;
+  padding-right: 5em;
   display: flex;
   flex-direction: column;
   @media (max-width: 820px) {  
-    padding-left: 1px;
-    padding-right: 1px;
+    padding-left: 1em;
+    padding-right: 1em;
     padding-top: 14em;
     margin-top: 0em;
   `
 
+  const Title = styled.header`
+    text-align: center;
+  `
+
   const ProjectList = [
+    // {
+    //   "title": "Twittok",
+    //   "gif": { Distilled },
+    //   "info": "Social networking site",
+    //   "technologies": ["React", "Express", "Mongoose", "MongoDBLab","Heroku", "Flex", "Styled Components", "Babel", "Jest", "Enzyme", "Webpack", "ESLint"],
+    //   "github": "https://github.com/Distilled-org/Selam_service",
+    //   "live": true,
+    //   "type": "Web Application"
+    // },
     {
       "title": "Distilled",
       "gif": { Distilled },
@@ -33,17 +46,8 @@ const ProjectsPage = () => {
       "type": "Web Application"
     },
     {
-      "title": "FlickStash",
-      "gif": { FlickStash },
-      "info": "Save, and organize your favorite films - movie database API",
-      "technologies": ["React", "Javascript", "Express", "PostgreSQL", "Heroku", "Styled Components"],
-      "github": "https://github.com/sygessese/flickstash",
-      "live": "https://flickstash.herokuapp.com/",
-      "type": "Web Application"
-    },
-    {
       "title": "Hungry",
-      "gif": { Hungry },
+      "gif": null,
       "info": "No fuss selection of highly rated dining options near you",
       "technologies": ["ReactNative", "GraphQL", "Geolocation", "Javascript", "Express", "PostgreSQL"],
       "github": "https://github.com/sygessese/hungry",
@@ -52,12 +56,21 @@ const ProjectsPage = () => {
     },
     {
       "title": "Gessese",
-      "gif": { Gessese },
+      "gif": null,
       "info": "Personal Portfolio",
       "technologies": ["GatsbyJS", "MaterialUI", "Styled Components", "Route 53", "Github Pages"],
       "github": "https://github.com/sygessese/sygessese.github.io/",
       "live": "https://gessese.com",
       "type": "Static Website"
+    },
+    {
+      "title": "FlickStash",
+      "gif": { FlickStash },
+      "info": "Save, and organize your favorite films - movie database API",
+      "technologies": ["React", "Javascript", "Express", "PostgreSQL", "Heroku", "Styled Components"],
+      "github": "https://github.com/sygessese/flickstash",
+      "live": "https://flickstash.herokuapp.com/",
+      "type": "Web Application"
     }
   ];
 
@@ -69,6 +82,7 @@ const ProjectsPage = () => {
     <Layout>
       <SEO title="Gessese" lang="en" description="Portfolio" />
       <Container>
+        <Title> Projects </Title>
         {ProjectListRendered}
       </Container>
     </Layout>
