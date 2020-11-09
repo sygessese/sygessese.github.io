@@ -7,23 +7,25 @@ import Hungry from "../images/Coding.jpg";
 import FlickStash from "../images/IMG_1529.gif"
 import Gessese from "../images/Coding.jpg"
 import Distilled from "../images/Distilled.gif"
+import Typewriter from "../components/typewriter"
 
 const ProjectsPage = () => {
   const Container = styled.div`
-  margin-top: 5em;
-  padding-left: 25em;
-  padding-right: 5em;
-  display: flex;
-  flex-direction: column;
-  @media (max-width: 820px) {  
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 14em;
-    margin-top: 0em;
+    margin-top: 5em;
+    padding-left: 25em;
+    padding-right: 5em;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 820px) {  
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: 14em;
+      margin-top: 0em;
   `
-
-  const Title = styled.header`
-    text-align: center;
+  const Header = styled.div`
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: .5em;
   `
 
   const ProjectList = [
@@ -82,7 +84,7 @@ const ProjectsPage = () => {
     <Layout>
       <SEO title="Gessese" lang="en" description="Portfolio" />
       <Container>
-        <Title> Projects </Title>
+        <Header><Typewriter text="Projects" /></Header>
         {ProjectListRendered}
       </Container>
     </Layout>
