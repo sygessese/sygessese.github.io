@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import CvSection from "../components/CvSection"
+import Typewriter from "../components/typewriter"
 
 const IndexPage = () => {
   const CvContainer = styled.div`
@@ -40,7 +41,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Gessese" lang="en" description="Portfolio" />
       <CvContainer>
-        <CvHeaderName>Selam Gessese</CvHeaderName>
+        <CvHeaderName><Typewriter text="Selam Gessese" /></CvHeaderName>
         <CvHeaderDetails>
           sygessese@gmail.com | github.com/sygessese
         </CvHeaderDetails>
