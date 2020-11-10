@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import styled from "styled-components"
 import CvSection from "../components/CvSection"
 
+
 const IndexPage = () => {
   const CvContainer = styled.div`
     display: flex;
@@ -13,7 +14,6 @@ const IndexPage = () => {
     padding-right: 5em;
     font-size: 0.95em;
     margin-bottom: 3em;
-
     @media (max-width: 820px) {
       padding-left: 0px;
       padding-top: 10em;

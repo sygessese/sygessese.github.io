@@ -64,6 +64,7 @@ const Header = props => {
     }
   `
 
+
   return (
     <div>
       <Menubar>
@@ -75,7 +76,6 @@ const Header = props => {
         */}
 
           <Pic />
-
           <Bio>
             Hello! My name is Selam and I am a software engineer living in
             Seattle. I am passionate about solving complex challenges, and
