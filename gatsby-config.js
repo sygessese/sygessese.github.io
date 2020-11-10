@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
-    description: `Software Engineer`,
-    author: `Gessese`,
+    title: `Selam Gessese`,
+    description: `Seattle Software Engineer with a passion for building beautiful things`,
+    titleTemplate: "Selam Gessese, Software Engineer",
+    url: "https://www.gessese.com",
+    image: "/images/portrait.jpg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
