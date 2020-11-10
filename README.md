@@ -1,43 +1,21 @@
-
 <h1 align="center">
-  Gatsby portfolio
+  Gatsby portfolio 🚀 
 </h1>
 
-## 🚀 Quick start
-
 1. **Run Gatsby locally**
-    In one shell tab, run the command: npm run build
-    In a second terminal tab, run the command: npm start
-    In a browser, open: localhost:8000
-    
-    To see changes to code locally, run: npm run build. This is an expensive task, so it's not automatic.
+   In one shell tab, run the command: npm run build
+   In a second terminal tab, run the command: npm start
+   In a browser, open: localhost:8000
 
-1.  **Post updated source code to Github**
+   To see changes to code locally, run: npm run build.
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+2. **Post updated source code to Github**
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+   .
 
-1.  **Update live website**
+3. **Update live website**
 
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
-
-
-
-
-
-
-
-
-
+   .
 
 ## 🧐 What's inside?
 
@@ -65,14 +43,14 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+5.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+6.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+7.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+8.  **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+9.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+10. **`README.md`**: A text file containing useful reference information about your project.
