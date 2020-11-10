@@ -41,7 +41,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Gessese" lang="en" description="Portfolio" />
       <CvContainer>
-        <CvHeaderName><Typewriter text="Selam Gessese" /></CvHeaderName>
+        <CvHeaderName><Typewriter text="Selam Gessese" cursorColor="#d9e6e785"/></CvHeaderName>
         <CvHeaderDetails>
           sygessese@gmail.com | github.com/sygessese
         </CvHeaderDetails>

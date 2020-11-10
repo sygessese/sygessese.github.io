@@ -1,8 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
-import GlossySelfie from "../images/glossyselfie.jpg"
-
+import Portrait from "../images/portrait.png"
 import CardActions from "@material-ui/core/CardActions"
 import Button from "@material-ui/core/Button"
 import ButtonGroup from "@material-ui/core/ButtonGroup"
@@ -17,10 +16,15 @@ const Header = props => {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: gainsboro;
     overflow: auto;
     display: flex;
     flex-direction: column;
+    // alternative glass shades
+    // background-color: rgb(156 214 227 / 15%); 
+    // background-color: #aac5c663;
+    background-color: #d9e6e785; 
+    backdrop-filter: blur(6px);
+    box-shadow: 2px 2px 10px 6px #5b7d7e;
 
     @media (max-width: 820px) {
       height: 12em;
@@ -47,12 +51,11 @@ const Header = props => {
   `
 
   const Pic = styled.img.attrs({
-    src: GlossySelfie,
+    src: Portrait,
   })`
     width: 16em;
     height: 16em;
     object-fit: cover;
-    // border: 1px solid white;
     border-radius: 50%;
     margin: 1em;
 
@@ -69,21 +72,13 @@ const Header = props => {
     <div>
       <Menubar>
         <ContentContainer>
-          {/* 
-        <Link to="/about"> /about  </Link>
-        <Link to="/projects"> /projects </Link>
-        <Link to="/"> / </Link> 
-        */}
-
           <Pic />
-
           <Bio>
             Hello! My name is Selam and I am a software engineer based in
             Seattle. I am passionate about solving complex challenges, and
             contributing to an elevated human experience.
             <br></br>
           </Bio>
-
           <CardActions>
             <ButtonGroup
               orientation="vertical"
