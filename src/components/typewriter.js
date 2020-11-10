@@ -16,31 +16,31 @@ class Typewriter extends React.Component {
   }
   
   componentDidMount() {
-    this.setState({text: this.props.text}, this.startShow)
+    this.setState({text: this.props.text}, this.startTheShow)
   }
 
   updateCursor() {
-    this.setState({visibleCursor: !this.state.visibleCursor, count: this.state.count+1}, this.startShow)
+    this.setState({visibleCursor: !this.state.visibleCursor, count: this.state.count+1}, this.startTheShow)
   }
 
   updateText() {
-    this.setState({printedText: this.state.printedText + this.state.text[this.state.printedText.length]}, this.startShow)
+    this.setState({printedText: this.state.printedText + this.state.text[this.state.printedText.length]}, this.startTheShow)
   }
 
-  async startShow() {
+  async startTheShow() {
     if (this.state.count < 4) {
-      await this.millisecondPromise(400)
+      await this.msPromise(400)
       this.updateCursor()
     } else if (this.state.printedText.length !== this.state.text.length) {
-      await this.millisecondPromise(200)
+      await this.msPromise(200)
       this.updateText()
-    } else if (this.state.count < 12) {
-      await this.millisecondPromise(400)
+    } else if (this.state.count < 120) {
+      await this.msPromise(400)
       this.updateCursor()
     } 
   }
 
-  millisecondPromise(ms) {
+  msPromise(ms) {
     return new Promise(resolve => setTimeout(() => {resolve()}, ms)); 
   }
 
@@ -49,7 +49,7 @@ class Typewriter extends React.Component {
     return (
       <Container>
         <span>{this.state.printedText}</span>
-        <Cursor visibleCursor={this.state.visibleCursor}>_</Cursor>
+        <Cursor visibleCursor={this.state.visibleCursor} cursorColor={this.props.cursorColor}>_</Cursor>
       </Container>
     );
   }
@@ -60,8 +60,9 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   `
-const Cursor = styled.span`
-  color: 'red';
+const Cursor = styled.div`
+  display: inline;
+  color: ${props => props.cursorColor};
   opacity: ${props => props.visibleCursor ? 100 : 0};
 `
 

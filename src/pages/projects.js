@@ -15,7 +15,8 @@ const ProjectsPage = () => {
     padding-left: 25em;
     padding-right: 5em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-flow: wrap;
     @media (max-width: 820px) {  
       padding-left: 1em;
       padding-right: 1em;
@@ -84,7 +85,7 @@ const ProjectsPage = () => {
     <Layout>
       <SEO title="Gessese" lang="en" description="Portfolio" />
       <Container>
-        <Header><Typewriter text="Projects" /></Header>
+        <Header><Typewriter text="Projects" cursorColor="lavenderblush"/></Header>
         {ProjectListRendered}
       </Container>
     </Layout>
