@@ -26,6 +26,9 @@ const AboutPage = () => {
   align-items: center;
   font-family: 'Ibarra Real Nova';
   font-weight: 400;
+  // glass effect
+  backdrop-filter: blur(8px);
+  background-color: rgb(196 222 237 / 25%);
   @media (max-width: 700px) {
     flex-direction: column-reverse;
     height: 90%;
