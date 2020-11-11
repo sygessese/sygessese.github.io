@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{RXBc:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),i=t.n(a),o=t("Bl7J"),c=t("vrFN"),l=t("vOnD");n.default=function(){var e=l.b.div.withConfig({displayName:"pages__Container",componentId:"sc-6wf9w7-0"})([""]);return i.a.createElement(o.a,null,i.a.createElement(c.a,{title:"Gessese",lang:"en",description:"Portfolio"}),i.a.createElement(e,null,i.a.createElement("object",{data:"../images/resume.pdf",type:"application/pdf"})))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-0eaf0f07de12314ad091.js.map
