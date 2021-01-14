@@ -4,9 +4,19 @@ module.exports = {
     description: `Seattle Software Engineer with a passion for building beautiful things`,
     titleTemplate: "Selam Gessese, Software Engineer",
     url: "https://www.gessese.com",
-    image: "/images/portrait.jpg",
+    image: "/images/smileportrait.jpg",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Montserrat\:300,500,600`,
+          `Suranna`
+        ],
+        display: 'swap'
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

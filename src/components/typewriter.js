@@ -47,7 +47,7 @@ class Typewriter extends React.Component {
   render() {
     
     return (
-      <Container>
+      <Container justifyContent='left'>
         <span>{this.state.printedText}</span>
         <Cursor visibleCursor={this.state.visibleCursor} cursorColor={this.props.cursorColor}>_</Cursor>
       </Container>
@@ -58,12 +58,13 @@ class Typewriter extends React.Component {
 const Container = styled.div`
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: ${props => props.justifyContent ? props.justifyContent : 'center'};
   `
 const Cursor = styled.div`
   display: inline;
   color: ${props => props.cursorColor};
   opacity: ${props => props.visibleCursor ? 100 : 0};
+  font-family: ${props => props.fontFamily ? props.fontFamily : 'Suranna'}
 `
 
 Typewriter.propTypes = {
