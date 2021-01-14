@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import Portrait from "../images/portrait.png"
+import Smile from "../images/smileportrait.jpg"
 import CardActions from "@material-ui/core/CardActions"
 import Button from "@material-ui/core/Button"
 import ButtonGroup from "@material-ui/core/ButtonGroup"
@@ -44,14 +45,31 @@ const Header = props => {
   const Bio = styled.div`
     margin: 1em;
     @media (max-width: 820px) {
-      width: 14em;
+      width: 20em;
       margin: 1em;
       align-self: center;
     }
   `
 
+  const Title = styled.div`
+  font-size: 2em;
+  display: block;
+  margin-top: 0;
+  font-family: Montserrat;
+  font-weight: 400;
+  justify-contents: left;
+  `
+
+  const Description = styled.div`
+  font-size: 1em;
+  display: block;
+  padding-left: 1em;
+  font-family: Montserrat;
+  font-weight: 300;
+  `
+
   const Pic = styled.img.attrs({
-    src: Portrait,
+    src: Smile,
   })`
     width: 16em;
     height: 16em;
@@ -73,12 +91,14 @@ const Header = props => {
       <Menubar>
         <ContentContainer>
           <Pic />
-
           <Bio>
-            Hello! My name is Selam and I am a software engineer based in
-            Seattle. I am passionate about solving complex challenges, and
-            contributing to an elevated human experience.
-            <br></br>
+            <Title>Hello! </Title>
+            <Description>
+            I'm Selam, a Software Engineer based in Seattle. 
+            I'm passionate about solving complex challenges, 
+            and contributing to an elevated human experience. 
+            I strive to leave the world a better place.
+            </Description>
           </Bio>
           <CardActions>
             <ButtonGroup
@@ -98,36 +118,27 @@ const Header = props => {
                 href="https://github.com/sygessese"
                 fullWidth
               >
-                Github: /SYGESSESE
+                Github
               </Button>
               <Button
                 size="small"
                 href="https://linkedin.com/in/sygessese"
                 fullWidth
               >
-                LinkedIn: /SYGESSESE
+                LinkedIn
               </Button>
               <Button
                 size="small"
                 href="mailto:sygessese@gmail.com?subject=From%20Gessese.com%20&body=Hi,%20"
                 fullWidth
               >
-                sygessese@gmail.com
+                Email
               </Button>
               <Button size="small" disabled={false} fullWidth>
                 <Link to="/projects" style={{ textDecoration: "none" }}>
-                  {" "}
-                  Projects{" "}
+                  Projects
                 </Link>
               </Button>
-
-              {/* links to quick sort demo */}
-              {/* <Button size="small" disabled={false} fullWidth>
-                <Link to="/quicksearch" style={{ textDecoration: "none" }}>
-                  {" "}
-                  ouu{" "}
-                </Link>
-              </Button> */}
             </ButtonGroup>
           </CardActions>
         </ContentContainer>
