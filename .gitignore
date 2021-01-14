@@ -3,7 +3,6 @@ gatsby-config.js
 node_modules		
 public
 README.md		
-gatsby-node.js		
 package-lock.json	
 gatsby-browser.js	
 gatsby-ssr.js		
