@@ -25,7 +25,6 @@ const Container = styled.div`
   justify-content: center;
   @media (max-width: 600px) {
     width: 100%;
-    flex-direction: column-reverse;
   }
 `
 
