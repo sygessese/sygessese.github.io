@@ -76,7 +76,7 @@ const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 16em;
+  padding-top: 21em;
   @media (max-width: 820px) {
     padding-top: 9em;
   }`
