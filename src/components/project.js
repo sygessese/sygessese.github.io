@@ -9,8 +9,10 @@ const Project = ({ title, info, github, live}) => {
   
   return (
     <Container>
-      <Title>{title}</Title>
-      <Description>{info}</Description> 
+      <div>
+        <Title>{title}</Title>
+        <Description>{info}</Description> 
+      </div>
       <ButtonsContainer>{githubbutton} {livebutton}</ButtonsContainer>
     </Container>
   )
@@ -22,7 +24,7 @@ const Container = styled.div`
   margin-bottom: 2em;
   width: 50%;
   padding-right: 0em;
-  justify-content: center;
+  justify-content: space-between;
   @media (max-width: 600px) {
     width: 100%;
   }

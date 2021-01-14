@@ -53,7 +53,7 @@ const Container = styled.div`
 
 const Header = styled.div`
   width: 100vw;
-  font-size: ${props => props.fontSize ? props.fontSize : '11em'};
+  font-size: ${props => props.fontSize ? props.fontSize : '13em'};
   margin-bottom: 0em;
   font-family: Suranna;
   margin-top: -.7;
@@ -62,7 +62,7 @@ const Header = styled.div`
   top: ${props => props.top? props.top : 0};
   background-color: rgb(236 255 77 / 77%);
   line-height: 1.5em;
-  padding-left: ${props => props.paddingLeft ? props.paddingLeft : '2em'};
+  padding-left: ${props => props.paddingLeft ? props.paddingLeft : '1.7em'};
   line-height: .64em;
   padding-top: .64em;
   @media (max-width: 820px) {
