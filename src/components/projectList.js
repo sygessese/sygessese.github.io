@@ -6,9 +6,9 @@ const ProjectList = [
   {
     "title": "Twittok",
     "gif": {Twittok: Github},
-    "info": "Social forum system featuring threads, posts, and home feed populated with user followings. Login authentication. Architected with Flux design using React, Styled Components, MaterialUI on the front end, and Node, Express, and MongoDB on the back end. Deployed on heroku.",
+    "info": "Social forum system featuring threads, posts, and home feed populated with user followings. Login authentication. Architected with Flux design using React, Styled Components, MaterialUI on the front end, and Node, Express, and MongoDB on the back end. Deployed on AWS using Docker.",
     "github": "https://github.com/sygessese/twitook",
-    "live": true,
+    "live": "http://18.217.73.238:8000",
     "type": "Web Application"
   },
   {
